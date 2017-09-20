@@ -1,0 +1,66 @@
+<!-- Redo project from scratch
+Use different images
+Implement different class names
+Put thumbnails on the bottom and preview on top
+Start off with the 4th image in the preview
+Line the thumbnails on the left side of the page, and the preview container onto the right (instead of top/bottom)
+Add Facebook like to the page using Facebooks widget: https://developers.facebook.com/docs/plugins/like-button
+Add captions below each image
+Add responsive media queries, etc.
+Open the picture in a modal window if clicked on
+Add tooltip text to the thumbnails" "- Set up github profile
+Remove the static height/width and make it %
+Don't use 
+tags -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jazz Saxophonist Photo Gallery</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Martel+Sans" rel="stylesheet">
+</head>
+<body>
+	<div id="gallery-wrapper">
+		<!-- TITLE -->
+		<div id="title">
+			<h1>A Collection of Famous Saxophonists Old and New</h1>
+		</div>
+		<!-- MAIN PHOTO -->
+		<div id="main-photo">
+			<figure>
+			<img src="./sax-pics/sonny-rollins.jpeg" name="mainPhoto">
+			<figcaption>Sonny Rollins</figcaption>
+			</figure>
+		</div>
+		<!-- PHOTO BAR-->
+		<div id="photo-bar">
+			<!-- places images here -->
+			<figure>
+				<img class="thumb" src="./sax-pics/sonny-rollins.jpeg" onclick="mainPhoto.src = this.src">
+				<figcaption>Sonny Rollins</figcaption>
+			</figure>
+			<figure>
+				<img class="thumb" src="./sax-pics/hank-mobley.jpeg" onclick="mainPhoto.src = this.src">
+				<figcaption>Hank Mobley</figcaption>
+			</figure>
+			<figure> 
+				<img class="thumb" src="./sax-pics/rossand-rolan-kirk.jpeg" onclick="mainPhoto.src = this.src">
+				<figcaption>Rossand Rolan Kirk</figcaption>
+			</figure>
+			<figure>
+				<img class="thumb" src="./sax-pics/john-coltrane.jpeg" onclick="mainPhoto.src = this.src">
+				<figcaption>John Coltrane</figcaption>
+			</figure>
+			<figure>
+				<img class="thumb" src="./sax-pics/chris-potter.jpeg" onclick="mainPhoto.src = this.src">
+				<figcaption>Chris Potter</figcaption>
+			</figure>
+			<figure>
+				<img class="thumb" src="./sax-pics/kamasai-washington.jpeg" onclick="mainPhoto.src = this.src">
+				<figcaption>Kamasai Washington</figcaption>
+			</figure>
+		</div>
+
+	</div>
+</body>
+</html>
